@@ -1,0 +1,83 @@
+.order-form-container {
+  margin-top: 20px;
+}
+
+.order-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-form h2 {
+  margin-bottom: 15px;
+}
+
+.order-form form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.order-form form select,
+.order-form form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 8px;
+}
+
+.order-form form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-form form button:hover {
+  background-color: #0056b3;
+}
+
+.order-form form button:disabled {
+  background-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 767px) {
+  .order-form {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .order-form {
+    padding: 10px;
+  }
+
+  .order-form form select,
+  .order-form form button {
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .order-form {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .order-form {
+    max-width: 300px;
+  }
+
+  .order-form form select,
+  .order-form form button {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
