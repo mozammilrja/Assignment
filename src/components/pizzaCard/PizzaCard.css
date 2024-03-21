@@ -1,4 +1,4 @@
-.pizza-card {
+/* .pizza-card {
   border: 1px solid #ccc;
   border-radius: 24px;
   padding: 20px;
@@ -30,4 +30,102 @@
 
 .pizza-card button:hover {
   background-color: #0056b3;
+} */
+
+
+/* Default styles */
+.pizza-card {
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
+
+.pizza-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.pizza-card p {
+  margin: 10px 0;
+}
+
+.pizza-card button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.pizza-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 767px) {
+  /* Small devices (mobile phones) */
+  .pizza-card {
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .pizza-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .pizza-card p {
+    font-size: 0.9rem;
+  }
+
+  .pizza-card button {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Medium devices (tablets) */
+  .pizza-card {
+    border-radius: 22px;
+    padding: 18px;
+  }
+
+  .pizza-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .pizza-card p {
+    font-size: 1rem;
+  }
+
+  .pizza-card button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Large devices (desktops) */
+  .pizza-card {
+    border-radius: 24px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pizza-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .pizza-card p {
+    font-size: 1.1rem;
+  }
+
+  .pizza-card button {
+    font-size: 1.1rem;
+  }
+}
+
