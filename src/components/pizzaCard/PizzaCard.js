@@ -46,12 +46,10 @@ const PizzaCard = ({
   }
 
   return (
-    <div className="pizza-card" style={{ backgroundColor }}>
+    <div className='pizza-card' style={{ backgroundColor }}>
       {/* Display pizza details */}
-      <h3>{order.type} Pizza</h3>
-      <p>Size: {order.size}</p>
-      <p>Base: {order.base}</p>
-      <p>Stage: {order.stage}</p>
+      <p>{order.type} Pizza</p>
+      <p>Order: {order.id}</p>
 
       {(order.stage === "Order Placed" ||
         order.stage === "Order in Making" ||
@@ -73,18 +71,11 @@ const PizzaCard = ({
       {/* Render action buttons based on the order stage */}
       {(order.stage === "Order Placed" ||
         order.stage === "Order in Making") && (
-        <>
-          <button onClick={handleCancelOrder}>Cancel</button>
-          <button onClick={handleMoveToNextStage}>Next</button>
-          <button onClick={handleMoveToPickedStage}>Picked</button>
-        </>
+        <button onClick={handleMoveToNextStage}>Next</button>
       )}
 
       {order.stage === "Order Ready" && (
-        <>
-          <button onClick={handleMoveToPickedStage}>Next</button>
-          <button onClick={handleMoveToPickedStage}>Picked</button>
-        </>
+        <button onClick={handleMoveToPickedStage}>Next</button>
       )}
       {order.stage === "Order Picked" && <span>Picked</span>}
     </div>
