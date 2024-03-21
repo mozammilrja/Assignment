@@ -78,7 +78,10 @@ button:hover {
 /* Small devices (phones) */
 @media only screen and (max-width: 600px) {
   .stage {
-    flex-basis: 100%; /* Set stage to full width on small screens */
+    flex-basis: 100%; 
+  }
+  .main-section {
+    margin: 2rem 1rem 6rem 1rem; 
   }
 }
 
@@ -87,6 +90,9 @@ button:hover {
   .stage {
     flex-basis: 50%; 
   }
+  .main-section {
+    margin: 3rem 1rem 8rem 1rem; 
+  }
 }
 
 /* Large devices (laptops/desktops) */
@@ -94,6 +100,9 @@ button:hover {
   .stage {
     flex-basis: calc(
       100% / 7
-    ); /* Set stage to quarter width on large screens */
+    ); 
+  }
+  .main-section {
+    margin: 4rem 1rem 10rem 1rem; 
   }
 }
